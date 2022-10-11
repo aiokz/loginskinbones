@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family:'Inter', sans-serif;
 }
 body
 {
@@ -12,16 +12,19 @@ body
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #23242a;
+    background: black;
 }
+
+
 .box
 {
     position: relative;
     width: 380px;
-    height: 420px;
-    background: #1c1c1c;
+    height: 430px;
+    background: #c21e704d;
     border-radius: 8px;
     overflow: hidden;
+    
 }
 .box::before
 {
@@ -31,7 +34,7 @@ body
     left: -50%;
     width: 380px;
     height: 420px;
-    background: linear-gradient(0deg,transparent,#8c48aa);
+    background: linear-gradient(0deg,transparent, #C21E6F);
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
 }
@@ -43,7 +46,7 @@ body
     left: -50%;
     width: 380px;
     height: 420px;
-    background: linear-gradient(0deg,transparent,#8c48aa);
+    background: linear-gradient(0deg,transparent,#C21E6F);
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
     animation-delay: -3s;
@@ -64,15 +67,16 @@ body
     position: absolute;
     inset: 2px;
     border-radius: 8px;
-    background: #28292d;
+    background: black;
     z-index: 10;
     padding: 50px 40px;
     display: flex;
     flex-direction: column;
+    
 }
 .form h2
 {
-    color: #8c48aa;
+    color: white;
     font-weight: 500;
     text-align: center;
     letter-spacing: 0.1em;
@@ -110,7 +114,7 @@ body
 .inputBox input:valid ~ span
 .inputBox input:focus ~ span
 {
-    color: #8c48aa;
+    color: #C21E6F;
     transform: translate(-10px);
     font-size: 0.75em;
 }
@@ -121,7 +125,7 @@ body
     bottom: 0;
     width: 100%;
     height: 2px;
-    background: #8c48aa;
+    background: #C21E6F;
     border-radius: 4px;
     transition: 0.5s;
     pointer-events: none;
@@ -147,19 +151,20 @@ body
 .links a:hover
 .links a:nth-child(2)
 {
-    color: #8c48aa;
+    color: #C21E6F;
 }
 input[type="submit"]
 {
     border: none;
     outline: none;
-    background: #8c48aa;
+    background: #C21E6F;
     padding: 11px 25px;
     width: 100px;
     margin-top: 10px;
     border-radius: 4px;
     font-weight: 600;
     cursor: pointer;
+    color: #ffffff;
 }
 input[type="submit"]:active
 {
